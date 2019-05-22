@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15ssp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/input"
+                style="@style/InputTextAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_marginBottom="@dimen/_10ssp"
+                android:gravity="center_vertical"
+                android:textAlignment="viewEnd"
+                android:autoSizeTextType="uniform"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/clear"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button_grey"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/clear"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/plus_minus"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button_grey"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/plus_minus"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/percentage"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button_grey"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/percentage"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/divide"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button_orenge"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/divide"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/seven"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/seven"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/eight"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/eight"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/nine"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/nine"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/multiply"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button_orenge"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/multiply"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/four"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/four"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/five"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/five"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/six"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/six"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/minus"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button_orenge"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/minus"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/one"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/one"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/two"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/two"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/three"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/three"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/plus"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button_orenge"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/plus"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16ssp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/allclear"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+
+                        android:background="@drawable/zero_button"
+
+                        android:text="@string/allclear"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/zero"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_weight="1"
+                        android:background="@drawable/zero_button"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/zero"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/decimal"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+
+                        android:background="@drawable/round_button"
+
+                        android:text="@string/decimal"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/equal"
+                        style="@style/AppLabelsTextAppearance"
+                        android:layout_width="@dimen/_60ssp"
+                        android:layout_height="@dimen/_60ssp"
+
+                        android:background="@drawable/round_button_orenge"
+
+                        android:text="@string/equal"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
